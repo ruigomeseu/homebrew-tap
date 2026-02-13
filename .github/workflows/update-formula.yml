@@ -4,6 +4,9 @@ on:
   repository_dispatch:
     types: [update-formula]
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -47,7 +50,7 @@ jobs:
         run: |
           cat > Formula/ffcli.rb << 'RUBY'
           class Ffcli < Formula
-            desc "CLI tool for interacting with the Flashfeed API"
+            desc "Fireflies.ai CLI — query meeting data from the command line"
             homepage "https://github.com/ruigomeseu/ffcli"
             version "VERSION_PLACEHOLDER"
             license "MIT"

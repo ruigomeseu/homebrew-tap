@@ -1,5 +1,5 @@
 class Ffcli < Formula
-  desc "CLI tool for interacting with the Flashfeed API"
+  desc "Fireflies.ai CLI — query meeting data from the command line"
   homepage "https://github.com/ruigomeseu/ffcli"
   version "0.0.0"
   license "MIT"
