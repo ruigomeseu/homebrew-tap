@@ -1,26 +1,26 @@
 class Ffcli < Formula
   desc "Fireflies.ai CLI — query meeting data from the command line"
   homepage "https://github.com/ruigomeseu/ffcli"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ruigomeseu/ffcli/releases/download/v0.1.2/ffcli-darwin-arm64"
-      sha256 "b92faf86cf8e8ca567e61c1b1c9bf56c1d012e1d1148edce00c9a20c18ab445e"
+      url "https://github.com/ruigomeseu/ffcli/releases/download/v0.1.3/ffcli-darwin-arm64"
+      sha256 "26f541b4bd0a1d848481dc499f3a22704d479bb1eed1ad304fb9d4bdd7474c1a"
     elsif Hardware::CPU.intel?
-      url "https://github.com/ruigomeseu/ffcli/releases/download/v0.1.2/ffcli-darwin-x64"
-      sha256 "843aa0b08a16d2ff3480a9226e12aa94b0b0b57c7562820f304378938805fc7c"
+      url "https://github.com/ruigomeseu/ffcli/releases/download/v0.1.3/ffcli-darwin-x64"
+      sha256 "e0408a46181e3575b0366a6aa008a4405c1b3ea42620edc9477188498630dcb1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ruigomeseu/ffcli/releases/download/v0.1.2/ffcli-linux-arm64"
-      sha256 "29436fbeb4bb49dbb2130e74ae2d9f8e194dbb53b602f815020dd2cf0faeaffc"
+      url "https://github.com/ruigomeseu/ffcli/releases/download/v0.1.3/ffcli-linux-arm64"
+      sha256 "31497670647e9c8d53598aeaa7588a781d807dde356f003b5917647bb16425de"
     elsif Hardware::CPU.intel?
-      url "https://github.com/ruigomeseu/ffcli/releases/download/v0.1.2/ffcli-linux-x64"
-      sha256 "49f4d19af6665c4bd7aaecb2abf43e5e213392c9e1d39e0f006700bc11351d54"
+      url "https://github.com/ruigomeseu/ffcli/releases/download/v0.1.3/ffcli-linux-x64"
+      sha256 "68964408dba4c1fa0aeb402ccc8000f2daa785a6fcaf7923145cb69b3e090cac"
     end
   end
 
